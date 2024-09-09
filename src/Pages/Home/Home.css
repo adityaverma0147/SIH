@@ -1,0 +1,371 @@
+/* LandingPage.css */
+/* :root {
+    --primary-color: #4CAF50;
+    --secondary-color: #FFA000;
+    --text-color: #333;
+    --background-color: #F5F5F5;
+  } */
+  
+  /* body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+   */
+  .landing-page {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 5px 7px
+
+    
+  }
+  
+
+.continue-running-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    font-weight: 500;
+    
+    width: 100%;
+    /* background-color: #c2c7cc; */
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    animation: move-line 15s linear infinite;
+}
+@keyframes move-line {
+    0% {
+      transform: translateX(-100%); /* Start the line off-screen to the left */
+    }
+    100% {
+      transform: translateX(100%); /* Move the line to the right */
+    }
+  }
+  .header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+  }
+  
+  .hero {
+    width: 100%;
+    /* box-sizing: border-box; */
+    text-align: center;
+    padding: 4rem 0;
+    background-image: url('../../assets/d1.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(246, 246, 246);
+  }
+  
+  .hero h1 {
+   
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 
+        1px 1px 0 black,
+        -1px 1px 0 black,
+        1px -1px 0 black,
+        -1px -1px 0 black;
+  }
+  
+  .cta-button {
+    background-color: var(--secondary-color);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+  }
+  
+  .cta-button:hover {
+    background-color: #FF8F00;
+  }
+
+.about{
+    padding: 4rem 0;
+    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-container {
+    
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    flex-wrap: wrap;    
+  }
+  .about h2 {
+    
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  .about p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+  .services h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    padding-bottom: 30px;
+  }
+  .services, .about, .contact {
+    padding: 4rem 0;
+  }
+  
+  h2 {
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  /* Services Section Styles */
+.services {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+  }
+  
+  .services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .services h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 0.5rem auto 0;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .service-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-card-image1{
+    height: 200px;
+    background-image: url('../../assets/soiltest.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .service-card-image2 {
+    height: 200px;
+    background-image: url('../../assets/wheat.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  .service-card-image3 {
+    height: 200px;
+    background: url('../../assets/d2.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .service-card-content {
+    padding: 1.5rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card p {
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .service-card .learn-more {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-card .learn-more:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+    .service-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+  
+  .contact {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+  }
+  
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+    .contact {
+      padding: 60px 0;
+    }
+    
+    .contact h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .service-cards {
+      flex-direction: column;
+    }
+  
+    .service-card {
+      flex-basis: 100%;
+    }
+  
+    .nav-links {
+      display: none; /* For simplicity. In a real project, you'd implement a mobile menu */
+    }
+  }

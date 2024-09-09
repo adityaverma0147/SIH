@@ -1,0 +1,55 @@
+
+.cruPage {
+    padding: 20px;
+    background: linear-gradient(135deg, #9ce1ed, #598bf8, #083e71);
+    height: 100vh;
+    
+  }
+  
+  .cruTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f8f9fa; 
+    border-radius: 8px; 
+    overflow: hidden;
+  }
+  
+  .cruTable th, .cruTable td {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+
+  }
+  
+  .cruTable th {
+    background: linear-gradient(100deg, #797acd,#3739b9,#181abb); 
+    color: #ffffff; 
+  }
+  
+  .cruTable td {
+    background-color: #ffffff; 
+  }
+  
+  .cruTable tr:nth-child(even) {
+    background-color: #fb0c0c; 
+  }
+  
+  .cruTable td button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cruTable td button img {
+    padding-left: 20px ;
+    width: 40px;
+    height: 40px;
+    /* object-fit: cover; */
+  }
+  
+  /* Hover effect on table rows */
+  .cruTable tbody tr:hover {
+    background-color: #414448; /* Light gray on hover */
+  }
+  

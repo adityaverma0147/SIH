@@ -1,0 +1,52 @@
+// import React, { useContext } from 'react';
+// import './Display.css';
+// import UserInputContext from './UserInputContext';
+
+// function FormComponent() {
+//   const { formData, handleChange, handleSubmit } = useContext(UserInputContext);
+  
+//   const handleKeyDown = (event) => {
+//     console.log(`Key pressed: ${event.key}`); // Debugging line
+//     // Check if Enter key is pressed
+//     if (event.key === 'Enter') {
+//       event.preventDefault(); // Prevent the default action (form submission)
+//       handleSubmit();
+//     }
+//   };
+//   return (
+//     <div className="loginsignup">
+//       <div className="loginsignup-container">
+//         <h1>Sign Up</h1>
+//         <div className="loginsignup-fields">
+//           <input
+//             type="text"
+//             name="name"
+//             placeholder="Your Name"
+//             value={formData.name}
+//             onChange={handleChange}
+//             onKeyDown={handleKeyDown}
+//           />
+//           <input
+//             type="email"
+//             name="email"
+//             placeholder="Email Address"
+//             value={formData.email}
+//             onChange={handleChange}
+//             onKeyDown={handleKeyDown}
+//           />
+//           <input
+//             type="password"
+//             name="password"
+//             placeholder="Password"
+//             value={formData.password}
+//             onChange={handleChange}
+//             onKeyDown={handleKeyDown}
+//           />
+//           <button onClick={handleSubmit}>Continue</button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default FormComponent;

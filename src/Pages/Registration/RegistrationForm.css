@@ -1,0 +1,119 @@
+
+  
+  .outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../../assets/bbg1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .wrapper-registration {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+  }
+  
+  .wrapper-registration h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  .wrapper-registration .input-box-registration {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+  }
+  
+  .input-box-registration input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+  }
+  
+  .input-box-registration input::placeholder {
+    color: #0b0b0b;
+  }
+  
+  .input-box-registration i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+  
+  .wrapper-registration .remember-forgot-registration {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    font-size: 14.5px;
+    margin: -15px 0px 15px;
+  }
+  
+  .remember-forgot-registration label input {
+    accent-color: #fff;
+    margin-right: 3px;
+    text-align: left;
+  }
+  
+  .remember-forgot-registration a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .remember-forgot-registration span {
+    gap: 13px;
+    display: flex;
+    float: left;
+    clear: both;
+  }
+  
+  .remember-forgot-registration a:hover {
+    text-decoration: underline;
+  }
+  
+  .wrapper-registration .btn-registration {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .wrapper-registration .register-link-registration {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+  }
+  
+  .register-link-registration p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .register-link-registration p a:hover {
+    text-decoration: underline;
+  }
+  

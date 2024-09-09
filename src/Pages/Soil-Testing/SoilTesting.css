@@ -1,0 +1,81 @@
+
+.soil-test-report {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Headings */
+.heading {
+  font-size: 1.8rem;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Section for location and date */
+.location-date p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* List styling for soil properties and recommendations */
+.soil-properties ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.soil-properties li {
+  font-size: 1rem;
+  color: #555;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Last list item should not have a bottom border */
+li:last-child {
+  border-bottom: none;
+}
+
+/* Improved margins for section spacing */
+.soil-properties,
+.crop-recommendations {
+  margin-bottom: 30px;
+}
+
+/* Handling empty crop recommendations */
+.crop-recommendations p {
+  font-style: italic;
+  color: #888;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .soil-test-report {
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  .subheading {
+    font-size: 1.3rem;
+  }
+
+  li {
+    font-size: 0.95rem;
+  }
+}
